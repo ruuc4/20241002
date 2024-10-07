@@ -1,0 +1,18 @@
+■github上のフォルダを取得する
+git clone HHTPSのパス(github上から取得)
+
+■github上の別ブランチのフォルダを取得する
+git clone -b HHTPSのパス(github上から取得) test2(ダウンロードするフォルダ名を指定する)
+→最後に「test2」でフォルダ名を指定することで落としてくるフォルダの名前を指定する
+なぜこれが必要かというと
+git clone HHTPSのパス(github上から取得)で実行して落としてきたフォルダはmainブランチのフォルダ
+なのでgit clone -b HHTPSのパス(github上から取得)で落とすと同じ名前のフォルダになってしまうので衝突してしまう
+それを避けるためにgit clone -b practice(ブランチ名) HHTPSのパス(github上から取得) test(別ファイル名)で別名を指定する必要がある
+
+
+
+
+
+
+
+
